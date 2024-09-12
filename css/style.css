@@ -1,0 +1,588 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 999;
+}
+.header__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__shrink {
+  box-shadow: 0px 0px 10px red;
+  color: #FFF;
+  -webkit-backdrop-filter: blur(5);
+          backdrop-filter: blur(5);
+  background-color: #FFF;
+}
+.header__btn-hamburger {
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header__nav-left {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+.header__list {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 5px 0px 15px crimson;
+  transition: 0.7s;
+  color: #191919;
+  gap: 30px;
+  padding: 20px;
+  background-color: #191919;
+}
+.header__item a {
+  position: relative;
+  color: #FFF;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding-bottom: 5px;
+}
+.header__item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: all 0.6s;
+}
+.header__item a:hover::after {
+  width: 100%;
+}
+.header__item a:focus {
+  outline: 2px solid #191919;
+  outline-offset: 2px;
+}
+.header__list-show {
+  left: 0;
+}
+.header__right--btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 19px 30px;
+  background-color: #A259FF;
+  border: 2px solid transparent;
+  color: #FFF;
+  border-radius: 20px;
+}
+.header__right--btn:hover {
+  background-color: transparent;
+  border: 2px solid #A259FF;
+}
+.header__item:nth-child(4) {
+  display: block;
+}
+.header .lang {
+  display: none;
+}
+.header .lang select {
+  padding: 9.5px 16px;
+  border: none;
+  border-left: 2px solid gray;
+  outline: none;
+}
+.header .lang select option {
+  padding: 10px 16px;
+}
+.header__nav-right {
+  display: block;
+  align-items: center;
+  gap: 66px;
+}
+.header__nav-right .signUp__btn button {
+  padding: 12px 49px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #184AFB;
+  background-color: #CCC;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+  color: #184AFB;
+}
+.header__nav-right .signUp__btn button:hover {
+  background-color: transparent;
+}
+
+.hero {
+  margin-top: 24px;
+}
+.hero__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.hero__in {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.hero__title {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 600;
+}
+.hero__desc {
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero__link a {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 700;
+  color: #000;
+  line-height: 22px;
+  padding-bottom: 8px;
+}
+.hero__link a:hover {
+  border-bottom: 3px solid #FFCE50;
+}
+.hero__img img {
+  max-width: 500px;
+  width: 100%;
+}
+.hero__img .second_truck {
+  display: none;
+}
+.hero__img .thirt_truck {
+  display: none;
+}
+.hero__bottom {
+  margin-top: 56px;
+  margin-bottom: 57px;
+}
+.hero__bottom-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 32px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+}
+.hero__bottom .hero__card-top img {
+  max-width: 92px;
+  width: 100%;
+}
+.hero__bottom .hero__card-bottom {
+  margin-top: 16px;
+}
+.hero__bottom .hero__card-title {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-weight: 600;
+  color: #363738;
+  font-size: 18px;
+  line-height: 24px;
+}
+.hero__bottom .hero__card-desc {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 12px;
+}
+
+.profitable__in {
+  display: none;
+  align-items: center;
+}
+.profitable__left {
+  display: flex;
+  align-items: center;
+}
+.profitable__cards {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px;
+  justify-content: center;
+}
+.profitable__card {
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.profitable__card-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 700px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__list {
+    position: static;
+    flex-direction: row;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+  }
+  .header__item a {
+    color: #191919;
+  }
+  .header__btn-hamburger {
+    display: none;
+  }
+  .header__right--btn {
+    display: flex;
+  }
+  .header__item:nth-child(4) {
+    display: block;
+  }
+  .header__nav-right {
+    display: flex;
+    align-items: center;
+    gap: 66px;
+  }
+  .header__nav-right .signUp__btn button {
+    padding: 9.5px 49px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #184AFB;
+    background-color: #FFF;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+    color: #184AFB;
+  }
+  .header__nav-right .signUp__btn button:hover {
+    background-color: #184AFB;
+    color: #FFF;
+  }
+  .header__nav-right .signUp__btn button:hover img {
+    fill: #FFF;
+  }
+  .hero {
+    margin-top: 24px;
+  }
+  .hero__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .hero__in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 55px;
+    font-weight: 600;
+    color: #363738;
+  }
+  .hero__desc {
+    max-width: 700px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #6B6B6C;
+  }
+  .hero__link {
+    display: flex;
+    justify-content: center;
+  }
+  .hero__link a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    line-height: 24px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+  }
+  .hero__link a:hover {
+    border-bottom: 3px solid #FFCE50;
+  }
+  .hero__img img {
+    max-width: 500px;
+    width: 100%;
+  }
+  .hero__img .first_truck {
+    display: none;
+  }
+  .hero__img .second_truck {
+    display: block;
+    max-width: 690px;
+    width: 100%;
+  }
+  .hero__img .thirt_truck {
+    display: none;
+  }
+  .hero__bottom {
+    margin-top: 56px;
+  }
+  .hero__bottom-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 32px;
+    border-radius: 20px;
+    box-shadow: none;
+  }
+  .hero__bottom .hero__bottom-card {
+    padding: 30px 32px;
+    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 32px;
+    border-radius: 20px;
+  }
+  .hero__bottom .hero__card-bottom {
+    margin-top: 16px;
+  }
+  .hero__bottom .hero__card-title {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-weight: 600;
+    color: #363738;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .hero__bottom .hero__card-desc {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__list {
+    position: static;
+    flex-direction: row;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+  }
+  .header__item a {
+    color: #191919;
+  }
+  .header__btn-hamburger {
+    display: none;
+  }
+  .header__right--btn {
+    display: flex;
+  }
+  .header__item:nth-child(4) {
+    display: block;
+  }
+  .header__nav-right {
+    display: flex;
+    align-items: center;
+    gap: 66px;
+  }
+  .header__nav-right .signUp__btn button {
+    padding: 9.5px 49px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #184AFB;
+    background-color: #FFF;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+    color: #184AFB;
+  }
+  .header__nav-right .signUp__btn button:hover {
+    background-color: #184AFB;
+    color: #FFF;
+  }
+  .header__nav-right .signUp__btn button:hover img {
+    fill: #FFF;
+  }
+  .hero {
+    margin-top: 24px;
+  }
+  .hero__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+  .hero__in {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 55px;
+    font-weight: 600;
+    color: #363738;
+  }
+  .hero__desc {
+    max-width: 700px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #6B6B6C;
+  }
+  .hero__link {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .hero__link a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    line-height: 24px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+  }
+  .hero__link a:hover {
+    border-bottom: 3px solid #FFCE50;
+  }
+  .hero__img img {
+    max-width: 635px;
+    width: 100%;
+  }
+  .hero__img .first_truck {
+    display: none;
+  }
+  .hero__img .second_truck {
+    display: none;
+  }
+  .hero__img .thirt_truck {
+    display: flex;
+  }
+  .hero__bottom {
+    margin-top: 56px;
+  }
+  .hero__bottom-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px 32px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+  }
+  .hero__bottom .hero__bottom-card {
+    padding: 30px 72px;
+    box-shadow: none;
+    display: block;
+    gap: 32px;
+    border-radius: 1px;
+  }
+  .hero__bottom .hero__bottom-card:nth-child(2) {
+    border-radius: none;
+    border: 1px solid rgba(0, 0, 0, 0.1647058824);
+    border-top: none;
+    border-bottom: none;
+  }
+  .hero__bottom .hero__card-bottom {
+    margin-top: 16px;
+  }
+  .hero__bottom .hero__card-title {
+    max-width: 228px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-weight: 600;
+    color: #363738;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .hero__bottom .hero__card-desc {
+    max-width: 225px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 12px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.df {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,627 @@
+@import './mixins';
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 999;
+
+    &__nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__shrink{
+        box-shadow: 0px 0px 10px red;
+        color: #FFF;
+        backdrop-filter: blur(5);
+        background-color: #FFF;
+    }
+    &__btn-hamburger{
+        width: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }   
+    &__nav-left{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__list{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        box-shadow: 5px 0px 15px crimson;
+        transition: 0.7s;
+        color: $black;
+        gap: 30px;
+        padding: 20px;
+        background-color: $black
+    }
+    &__item{
+        a{
+            position: relative;
+            color:#FFF;
+            @include exo-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            padding-bottom: 5px;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom:0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: red;
+                transition: all 0.6s;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+            &:focus{
+                outline:2px solid $black;
+                outline-offset: 2px;
+            }
+        }
+    }
+    &__list-show{
+        left: 0;
+    }
+    &__right--btn{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 19px 30px;
+        background-color: #A259FF;
+        border: 2px solid transparent;
+        color: #FFF;
+        border-radius: 20px;
+        &:hover{
+            background-color: transparent;
+            border: 2px solid #A259FF;
+        }
+    }
+    &__item:nth-child(4){
+        display: block;
+    }
+
+    .lang{
+        display: none;
+        select{
+            padding: 9.5px 16px;
+            border: none;
+            border-left: 2px solid gray;
+            outline: none;
+            option{
+                padding: 10px 16px;
+            }
+        }
+    }
+
+    &__nav-right{
+        display: block;
+        align-items: center;
+        gap: 66px;
+
+        .signUp__btn{
+            button{
+                padding: 12px  49px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                border: 1px solid #184AFB;
+                background-color: #CCC;
+                border-radius: 50px;
+                cursor: pointer;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 150% */
+                text-transform: capitalize;
+                color: #184AFB;
+                &:hover{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.hero{
+    margin-top: 24px;
+
+    &__texts{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__in{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__title{
+        @include exo-font;
+        font-size: 28px;
+        line-height: 35px;
+        font-weight: 600;
+    }
+
+    &__desc{
+        font-size: 15px;
+        line-height: 22px;
+        @include pt-font;
+
+        
+    }
+
+    &__link{
+        a{
+            font-size: 16px;
+            @include pt-font;
+            font-weight: 700;
+            color: #000;
+            line-height: 22px;
+            padding-bottom: 8px;
+            &:hover{
+                border-bottom: 3px solid #FFCE50;
+            }
+        }
+
+    }
+    &__img{
+        img{
+            max-width: 500px;
+            width: 100%;
+        }
+        .second_truck{
+            display: none;
+        }
+        .thirt_truck{
+            display: none;
+        }
+    }
+    &__bottom{
+        margin-top: 56px;
+        margin-bottom: 57px;
+
+        &-cards{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 24px 32px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 18px 10px rgba(0,0,0,0.1);
+        }
+        .hero__card-top{
+            img{
+                max-width: 92px;
+                width: 100%;
+            }
+        }
+        .hero__card-bottom{
+            margin-top: 16px
+        }
+        .hero__card-title{
+            @include exo-font;
+            font-weight: 600;
+            color: $gray2;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .hero__card-desc{
+            @include pt-font;
+            font-size: 15px;
+            line-height: 22px;
+            margin-top: 12px;
+        }
+    }
+
+}
+
+.profitable{
+    &__in{
+        display: none;
+        align-items: center;
+    }
+
+    &__left{
+        display: flex;
+        align-items: center;
+    }   
+
+    &__cards{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 140px;
+        justify-content: center;
+    }
+
+    &__card{
+        max-width: 450px;
+        width: 100%;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        &-infos{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+    }
+
+}
+}
+
+
+
+
+
+
+
+
+@media (min-width:700px){
+    .header{
+        &__nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__list{
+            position: static;
+            flex-direction: row;
+            box-shadow: none;
+            height: auto;
+            width: auto;
+            background-color: transparent;
+        }
+
+        &__item{
+            a{
+                color: $black;
+            }
+        }
+        &{
+            &__btn-hamburger{
+                display: none;
+            }
+        }
+        &__right--btn{
+            display: flex;
+        }
+        &__item:nth-child(4){
+            display: block;
+        }
+
+        &__nav-right{
+            display: flex;
+            align-items: center;
+            gap: 66px;
+    
+            .signUp__btn{
+                button{
+                    padding: 9.5px  49px;
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    border: 1px solid #184AFB;
+                    background-color: #FFF;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                    text-transform: capitalize;
+                    color: #184AFB;
+                    &:hover{
+                        background-color: #184AFB;
+                        color: #FFF;
+                        img{
+                            fill: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .hero{
+        margin-top: 24px;
+        &__texts{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+    
+        &__in{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
+        &__title{
+            font-size: 44px;
+            line-height: 55px;
+            font-weight: 600;
+            color: $gray2;
+        }
+    
+        &__desc{
+            max-width: 700px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: $gray;
+        }
+    
+        &__link{
+            display: flex;
+            justify-content: center;
+            a{
+                
+                font-size: 16px;
+                font-weight: 700;
+                color: #000;
+                line-height: 24px;
+                padding-bottom: 8px;
+                border-bottom: 3px solid transparent;
+                &:hover{
+                    border-bottom: 3px solid #FFCE50;
+                }
+            }
+    
+        }
+        &__img{
+            img{
+                max-width: 500px;
+                width: 100%;
+            }
+            .first_truck{
+                display: none;
+            }
+            .second_truck{
+                display: block;
+                max-width: 690px;
+                width: 100%;
+            }
+
+            .thirt_truck{
+                display: none;
+            }
+        }
+        &__bottom{
+            margin-top: 56px;
+            &-cards{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                padding: 24px 32px;
+                border-radius: 20px;
+                box-shadow: none;
+            }
+
+            .hero__bottom-card{
+                padding: 30px 32px;
+                box-shadow: 0px 0px 18px 10px rgba(0,0,0,0.1);
+                display: flex;
+                gap: 32px;
+                border-radius: 20px;
+            }
+
+            .hero__card-bottom{
+                margin-top: 16px;
+            }
+            .hero__card-title{
+                @include exo-font;
+                font-weight: 600;
+                color: $gray2;
+                font-size: 18px;
+                line-height: 24px;
+            }
+            .hero__card-desc{
+                @include pt-font;
+                font-size: 15px;
+                line-height: 22px;
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .header{
+        &__nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__list{
+            position: static;
+            flex-direction: row;
+            box-shadow: none;
+            height: auto;
+            width: auto;
+            background-color: transparent;
+        }
+
+        &__item{
+            a{
+                color: $black;
+            }
+        }
+        &{
+            &__btn-hamburger{
+                display: none;
+            }
+        }
+        &__right--btn{
+            display: flex;
+        }
+        &__item:nth-child(4){
+            display: block;
+        }
+
+        &__nav-right{
+            display: flex;
+            align-items: center;
+            gap: 66px;
+    
+            .signUp__btn{
+                button{
+                    padding: 9.5px  49px;
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    border: 1px solid #184AFB;
+                    background-color: #FFF;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                    text-transform: capitalize;
+                    color: #184AFB;
+                    &:hover{
+                        background-color: #184AFB;
+                        color: #FFF;
+                        img{
+                            fill: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hero{
+        margin-top: 24px;
+        &__texts{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 32px;
+        }
+    
+        &__in{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            gap: 32px;
+        }
+        &__title{
+            font-size: 44px;
+            line-height: 55px;
+            font-weight: 600;
+            color: $gray2;
+        }
+    
+        &__desc{
+            max-width: 700px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 24px;
+            text-align:justify;
+            color: $gray;
+        }
+    
+        &__link{
+            display: flex;
+            justify-content: flex-start;
+            a{
+                
+                font-size: 16px;
+                font-weight: 700;
+                color: #000;
+                line-height: 24px;
+                padding-bottom: 8px;
+                border-bottom: 3px solid transparent;
+                &:hover{
+                    border-bottom: 3px solid #FFCE50;
+                }
+            }
+    
+        }
+        &__img{
+            img{
+                max-width: 635px;
+                width: 100%;
+            }
+            .first_truck{
+                display: none;
+            }
+
+            .second_truck{
+                display: none;
+            }
+            .thirt_truck{
+                display: flex;
+            }
+        }
+        &__bottom{
+            margin-top: 56px;
+            &-cards{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                gap: 24px;
+                padding: 24px 32px;
+                border-radius: 20px;
+                box-shadow: 0px 0px 18px 10px rgba(0,0,0,0.1);
+            }
+
+            .hero__bottom-card{
+                padding: 30px 72px;
+                box-shadow: none;
+                display: block;
+                gap: 32px;
+                border-radius: 1px;
+                &:nth-child(2){
+                    border-radius: none;
+                    border: 1px solid #0000002a;
+                    border-top: none;
+                    border-bottom: none;
+                }
+            }
+
+            .hero__card-bottom{
+                margin-top: 16px;
+            }
+            .hero__card-title{
+                max-width: 228px;
+                @include exo-font;
+                font-weight: 600;
+                color: $gray2;
+                font-size: 18px;
+                line-height: 24px;
+            }
+            .hero__card-desc{
+                max-width: 225px;
+                @include pt-font;
+                font-size: 15px;
+                line-height: 22px;
+                margin-top: 12px;
+            }
+        }
+    }
+}
