@@ -241,7 +241,7 @@
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  gap: 140px;
+  gap: 50px 140px;
   justify-content: center;
 }
 .profitable__card {
@@ -255,6 +255,225 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.work {
+  margin-top: 120px;
+  margin-bottom: 102px;
+}
+.work__title {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #363738;
+}
+.work__desc {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6B6B6C;
+  margin-top: 20px;
+}
+.work__cards {
+  margin-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.work__card {
+  border-radius: 10px;
+  max-width: 393px;
+  width: 100%;
+  box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+}
+.work__card img {
+  max-width: 393px;
+  width: 100%;
+}
+.work__card-infos {
+  padding: 24px 32px;
+}
+.work__card-infos h3 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #363738;
+}
+.work__card-infos p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 291px;
+  color: #6B6B6C;
+  margin: 16px 0 32px 0;
+}
+.work__card-infos a {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #363738;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5px;
+}
+.work__card-infos a:hover {
+  border-bottom: 3px solid #FFCE50;
+}
+
+.stages {
+  margin-bottom: 60px;
+}
+.stages__title {
+  font-size: 24px;
+}
+.stages__card {
+  display: flex;
+  gap: 56px;
+  padding: 32px 0 32px 36px;
+  border-radius: 10px;
+  margin-top: 48px;
+  box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+}
+.stages__card img {
+  display: none;
+}
+.stages__card-infos p {
+  max-width: 568px;
+  width: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  font-size: 14px;
+  color: #6B6B6C;
+}
+.stages__card-infos h3 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  color: #363738;
+  line-height: 25px;
+}
+.stages__card-infos .line {
+  height: 2px;
+  width: 100px;
+  background-color: #FFCE50;
+  margin: 24px 0;
+}
+
+.trust {
+  margin-bottom: 130px;
+}
+.trust__title {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.trust__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.trust__logos {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.trust__logo {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #191919;
+  padding: 0 61px;
+}
+.trust__logo img {
+  margin-bottom: 16px;
+}
+.trust__logo-infos {
+  display: flex;
+  gap: 14px 0;
+  flex-direction: column;
+  align-items: center;
+}
+.trust__logos:nth-child(4) .trust__logo {
+  border-right: none;
+}
+.trust__logos:nth-child(2) .trust__logo {
+  border-right: none;
+}
+.trust__logos:nth-child(1) .trust__logo {
+  border-right: none;
+}
+.trust__logos:nth-child(3) {
+  display: none;
+}
+.trust__logos:nth-child(4) {
+  display: none;
+}
+
+.company {
+  margin-bottom: 60px;
+}
+.company .line {
+  height: 2px;
+  width: 100px;
+  background-color: #FFCE50;
+  margin: 24px 0;
+}
+.company__title {
+  font-size: 24px;
+}
+.company__cards {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.company__card {
+  display: flex;
+}
+.company__card-left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 50px;
+  height: 210px;
+  background-color: #0B7572;
+}
+.company__card-right {
+  flex-basis: 550px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+  padding: 32px 0px 32px 32px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.company__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (min-width: 700px) {
@@ -406,6 +625,180 @@
     font-size: 15px;
     line-height: 22px;
     margin-top: 12px;
+  }
+  .work {
+    margin-top: 120px;
+    margin-bottom: 212px;
+  }
+  .work__title {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 60px;
+    color: #363738;
+  }
+  .work__desc {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B6B6C;
+    margin-top: 60px;
+  }
+  .work__cards {
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .work__card {
+    border-radius: 10px;
+    max-width: 393px;
+    width: 100%;
+    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+  }
+  .work__card img {
+    max-width: 393px;
+    width: 100%;
+  }
+  .work__card-infos {
+    padding: 24px 32px;
+  }
+  .work__card-infos h3 {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #363738;
+  }
+  .work__card-infos p {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 291px;
+    color: #6B6B6C;
+    margin: 16px 0 32px 0;
+  }
+  .work__card-infos a {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #363738;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+  }
+  .work__card-infos a:hover {
+    border-bottom: 3px solid #FFCE50;
+  }
+  .stages {
+    margin-bottom: 120px;
+  }
+  .stages__title {
+    font-size: 48px;
+  }
+  .stages__card {
+    display: flex;
+    gap: 56px;
+    padding: 32px 0 32px 36px;
+    border-radius: 10px;
+    margin-top: 48px;
+    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+  }
+  .stages__card img {
+    display: flex;
+  }
+  .stages__card-infos p {
+    max-width: 568px;
+    width: 100%;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    color: #6B6B6C;
+    font-size: 16px;
+  }
+  .stages__card-infos h3 {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #363738;
+    line-height: 25px;
+  }
+  .stages__card-infos .line {
+    height: 2px;
+    width: 100px;
+    background-color: #FFCE50;
+    margin: 24px 0;
+  }
+  .trust {
+    margin-bottom: 130px;
+  }
+  .trust__title {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 40px;
+    margin-bottom: 60px;
+  }
+  .trust__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .trust__logos {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .trust__logo {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #191919;
+    padding: 0 61px;
+  }
+  .trust__logo img {
+    margin-bottom: 16px;
+  }
+  .trust__logo-infos {
+    display: flex;
+    gap: 14px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trust__logos:nth-child(4) .trust__logo {
+    border-right: none;
+  }
+  .trust__logos:nth-child(2) .trust__logo {
+    border-right: none;
+  }
+  .trust__logos:nth-child(1) .trust__logo {
+    border-right: 1px solid #191919;
+  }
+  .trust__logos:nth-child(3) .trust__logo {
+    border-right: none;
+  }
+  .trust__logos:nth-child(3) {
+    display: none;
+  }
+  .trust__logos:nth-child(4) {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -565,6 +958,64 @@
     font-size: 15px;
     line-height: 22px;
     margin-top: 12px;
+  }
+  .trust {
+    margin-bottom: 130px;
+  }
+  .trust__title {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 40px;
+    margin-bottom: 60px;
+  }
+  .trust__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .trust__logos {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .trust__logo {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #191919;
+    padding: 0 61px;
+  }
+  .trust__logo img {
+    margin-bottom: 16px;
+  }
+  .trust__logo-infos {
+    display: flex;
+    gap: 14px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trust__logos:nth-child(4) .trust__logo {
+    border-right: none;
+  }
+  .trust__logos:nth-child(2) .trust__logo {
+    border-right: 1px solid #191919;
+  }
+  .trust__logos:nth-child(1) .trust__logo {
+    border-right: 1px solid #191919;
+  }
+  .trust__logos:nth-child(3) .trust__logo {
+    border-right: 1px solid #191919;
+  }
+  .trust__logos:nth-child(3) {
+    display: flex;
+  }
+  .trust__logos:nth-child(4) {
+    display: flex;
   }
 }
 * {
