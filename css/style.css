@@ -476,6 +476,91 @@
   gap: 10px;
 }
 
+.contact {
+  margin-bottom: 50px;
+}
+.contact__title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #363738;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.contact__in {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  gap: 15px;
+}
+.contact__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .tel {
+  display: flex;
+  gap: 20px;
+}
+.contact .tel p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #363738;
+}
+.contact .tel a {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #363738;
+}
+.contact__right {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #F9F9FB;
+}
+.contact__right table, .contact__right td, .contact__right th {
+  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-left: 24px;
+}
+.contact__right th {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6B6B6C;
+  font-size: 12px;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1490196078);
+}
+.contact__right td {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1490196078);
+}
+.contact__right table {
+  border-collapse: collapse;
+}
+
+.video iframe {
+  max-width: 1058px;
+  width: 100%;
+  height: 295px;
+}
+
 @media (min-width: 700px) {
   .header__nav {
     display: flex;
@@ -799,6 +884,93 @@
   }
   .trust__logos:nth-child(4) {
     display: none;
+  }
+  .contact {
+    margin-bottom: 100px;
+  }
+  .contact__title {
+    font-size: 48px;
+    line-height: 60px;
+    color: #363738;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .contact__in {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 30px;
+  }
+  .contact__left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .contact .tel {
+    display: flex;
+    gap: 40px;
+  }
+  .contact .tel p {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #363738;
+  }
+  .contact .tel a {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #363738;
+  }
+  .contact__right {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #F9F9FB;
+  }
+  .contact__right table, .contact__right td, .contact__right th {
+    padding-bottom: 32px;
+    padding-top: 30px;
+    padding-left: 48px;
+  }
+  .contact__right th {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6B6B6C;
+    font-size: 16px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1490196078);
+  }
+  .contact__right td {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 14px;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1490196078);
+  }
+  .contact__right table {
+    border-collapse: collapse;
+  }
+  .video__truck {
+    display: flex;
+    justify-content: center;
+  }
+  .video iframe {
+    max-width: 1258px;
+    width: 100%;
+    height: 595px;
   }
 }
 @media (min-width: 1200px) {
